@@ -29,11 +29,39 @@ I used the small version of the model (124M model- 500MB on disk). [This Google 
   * You will also need tensorflow (version 1.14.00) and numpy.
 
 4. Run these commands to run the models, with and without prompts.
+
 ..* Without prompts
+
 > python generate_unconditional_samples.py --model_name YOURMODEL
+
 ..* With prompts
+
 > python interactive_conditional_samples.py --top_k 40 --model_name YOURMODEL
 And enter your prompt and hit enter
 
-## Option 2: 
+## Option 2: Deploy as an API on AWS EC2 instance
+The deployment option I used was [Cortex](https://www.cortex.dev/). It streamlineds the deployment process so you can specify the AWS resources to use in a single yaml file.
+
+The above site contains a tutorial on how to deploy and set up the API. However, I found the steps a bit confusing, especially when you want to deploy your own tuned model.
+
+1. Install the CLI 
+
+> bash -c "$(curl -sS https://raw.githubusercontent.com/cortexlabs/cortex/0.15/get-cli.sh)"
+
+2. Convert your model from the previous step to a Tensorflow model. Cortex provided a code snippet to do this, but it's buried in the .ipynb file in their sample repository. I placed this in the .py file in the depository.
+
+3. Upload your model to S3. You can do it the quick and dirty way via the AWS console, or using the Python boto3 package (code in this repository).
+
+4. Start the AWS cluster. I delay this step until now because it may take some time complete the previous step, and we don't want to cluster to start running and attract cost from AWS.
+> cortex cluster up
+
+5. Deploy the model.
+> cortex deploy
+
+6. Get the API endpoint with
+> cortex cluster info
+
+7. You can now use the API, wrap a web app around it, etc.
+
+
 
