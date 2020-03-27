@@ -41,8 +41,8 @@ I used the small version of the model (124M model- 500MB on disk). [This Google 
 > python interactive_conditional_samples.py --top_k 40 --model_name YOURMODEL
 And enter your prompt and hit enter
 
-## Option 2: Deploy as an API on AWS EC2 instance
-The deployment option I used was [Cortex](https://www.cortex.dev/). It streamlineds the deployment process so you can specify the AWS resources to use in a single yaml file.
+## Option 2: Deploy as an API on an AWS EC2 instance
+The deployment option I used was [Cortex](https://www.cortex.dev/). It streamlineds the deployment process so you can specify the AWS resources to use in a single yaml file, and it will handle VPC and Load Balancer for you as well.
 
 The above site contains a tutorial on how to deploy and set up the API. However, I found the steps a bit confusing, especially when you want to deploy your own tuned model.
 
