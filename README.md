@@ -2,11 +2,13 @@
 
 > Happy Sunday Melbourne! I’m here to spoon a delicious home-made Guacamole and Butternut Smoked Salmon.
 
-
 > Fried Croissant with sourdoughnuts and creamy pancake batter. My favourite breakfast in New York City and @eriqulotopos some stupid puns.
 
+> Available for breakfast, lunch and dinner just like Puget Sound’s Puget Sound Cafe. The buns at Somerbay South Burger & Chips are also good, especially the coconut and dill flavour.
+
+
 # AI Food Blog Writer
-Train an AI (OpenAI's GPT-2 model) to write food blog entries
+Train an AI (OpenAI's GPT-2 model) to write food blog entries. The above are samples written by the AI after training.
 
 ## Intro
 This is my attempt to train OpenAI's GPT-2 language model to write snippets for a (instagram) food blog. OpenAI made waves earlier last year when they released this model, which was deemed [too dangerous](https://techcrunch.com/2019/02/17/openai-text-generator-dangerous/) for the full version to be released. It subsequently released the full version in Nov 2019, and saw many new applications.
@@ -30,11 +32,11 @@ I used the small version of the model (124M model- 500MB on disk). [This Google 
 
 4. Run these commands to run the models, with and without prompts.
 
-..* Without prompts
+  * Without prompts
 
 > python generate_unconditional_samples.py --model_name YOURMODEL
 
-..* With prompts
+  * With prompts
 
 > python interactive_conditional_samples.py --top_k 40 --model_name YOURMODEL
 And enter your prompt and hit enter
@@ -62,6 +64,35 @@ The above site contains a tutorial on how to deploy and set up the API. However,
 > cortex cluster info
 
 7. You can now use the API, wrap a web app around it, etc.
+
+## Sample output
+### Without prompts
+> The face of street food - from the contemporary Bondi cafe @scarlatinaustralia #smashedmeat #relishfruit #streetfood #mofoifelbowl #sydneycafe #localseatery #sydneyeats #breadandbutter #cookiesandcream #sausageroll #dessert #omelette #plateau #foodlovers #sydneyblogger #foodlover #umassdrinks #cheapeats #sydneyfoodie #sydneyfoodblogger #sydneyfoodblogger #yummo #petebondi
+
+> The combination of grilled beef and lime, fresh lime slaw, mustard seeds, zucchini flowers, fresh lime, guacamole, leek and kim chi soft serve. Perfect epic meal #meturbalpourri #tcbd #sydneybars #sydneyeats #brewedchampagne #sydneyfood #sausageroll #menwithcuisines #sydneyfoodblogger #sydneyfoodblog #petecbarracuda
+
+> A Danish outlandish pop-up pub hidden under the bridge, bar or bridge northwest of Sydney. When dining out at this bar/bistro, you know you’ll end up dining off the menu. Don’t judge by the menu when you can order a greasy caffelato pizza from the menu. I shared a handful of the toppings the other night so if you haven’t had them yet, I’ll share them in a later post #saint_daneeagle #fcba #barsons #bistro #edoublewine #publife #peninsulife #barbancake #borrancafe #sydneybars #sydneyeats #sydneyfood #steak #skewers #fries #ncafe #foodlovers
+
+> Hit the road for me - pouring the area has paid off. Nine years later and I can say with absolute certainty this place is still one of Sydney’s best road spots. You can swipe swipe - you can swipe. That is all for this sunny Friday morning #medoccarroll #sydneycbd #spokeown #officialindianfood #indianrestaurant #centralparkdistillery #sydneyrestaurants #sydneyeats #sydneyfood #ligands #sushi #petecarroll
+
+> Lemon and Nutella Schnitzel Mud shot - pasta shots from one of my favourite Italian food venues @flatheadbaros in Fitzroy 
+Delicious Ascot but for me the real standout is the coffee shot - bring a camera baby! #flatheadbaros #sydneycbd #lisestate #ilovemudshot #sydneycoffee #sydneyfood #granola #sydneyfoodblogger #skiing #sydneyfoodblogger #coffeetime #dinner #tacotphotography #foodphotography #invited
+
+> One of my favourite places for good food photography is the The Kingfish Cafe in Thornbush. An eclectic bar/restaurant just outside the mainstream Sydney food scene. An absolute must visit place for foodists and locals alike. Try as this cafe might not look a view from the windows the food on display looks absolutely stunning!  #borrusco1 #sutherland #aldistillery #sydneyfood #sydneyfoodblogger #cocktails #invited #chocolate #sunflowerapples #sydneyfoodshare #scones #blacksesame #foodpics
+
+
+### With prompts
+#### Prompt: Burger
+
+> I had a blast on Tuesday morning devouring the classic Pork and Prawn Toast from the very cool @theburgercollectiveapp.
+
+> What an amazing food experience and @theburgencecollectiveau
+My favorite fried chicken sandwich from the @sydneyburgercollectiveau is finally here!!
+#burger #burgersofmelbourne #melbourneburgers #sydneyburgers #sydneyfood #
+
+> A beautiful breakfast dish for the weather. Don’t get me started on the potato fried chicken in blue jeans @bishopsgatemarket #melbournefood #melbournefoodblogger #melhotornot
+
+
 
 
 
