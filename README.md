@@ -92,6 +92,7 @@ My favorite fried chicken sandwich from the @sydneyburgercollectiveau is finally
 
 > A beautiful breakfast dish for the weather. Don’t get me started on the potato fried chicken in blue jeans @bishopsgatemarket #melbournefood #melbournefoodblogger #melhotornot
 
+Somehow the "burger" prompt makes the AI think "fried chicken"!
 
 
 
